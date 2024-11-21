@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PranaPulse Yoga</title>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.style.display = 'none'); // Hide all sections
+            document.getElementById(sectionId).style.display = 'block'; // Show the selected section
+        }
+
+        window.onload = function() {
+            showSection('home'); // Show home section by default
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>PranaPulse Yoga</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about-us')">About</a></li>
+                <li><a href="#" onclick="showSection('yoga-poses')">Poses</a></li>
+                <li><a href="#" onclick="showSection('research')">Research Articles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section id="home">
+    <h1>PranaPulse</h1>
+    <h2>Breathe Deep, Move Freely, Transform Fully</h2>
+    <p>Join us on a journey to inner peace and physical wellness.</p>
+        <div class="search-bar">
+            <form action="search_asana.php" method="post">
+            <input type="text" name="asana_name" placeholder="Search Yoga Asanas" required>
+            <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about-us">
+        <div class="container">
+          <h2>About Us</h2>
+          <!-- Introduction -->
+          <p>Welcome to PranaPulse, where we believe that yoga is not just an exercise, but a way of life. Our mission is to help you find balance, peace, and well-being both on and off the mat.</p>
+    
+          <!-- Core Values -->
+          <h3>Our Philosophy</h3>
+          <p>At PranaPulse, we embrace the philosophy that yoga is for everyone. Our teachings are grounded in the values of respect, inclusivity, and mindfulness. Whether you're a beginner or an experienced yogi, we offer a space where you can deepen your practice and discover your inner peace.</p>
+      
+          <!-- What We Offer -->
+          <h3>What We Offer</h3>
+          <ul>
+            <li><strong>Yoga information:</strong> From Vinyasa to Hatha and Restorative yoga, we offer a variety of tutorials designed to meet every level and need.</li>
+            <li><strong>Meditation Sessions:</strong> Weekly guided meditation sessions to help calm the mind and improve mental clarity.</li>
+            <li><strong>Research articles:</strong>These research articles contain various proven facts and can help you learn more interesting facts.</li>
+          </ul>
+
+          <!-- Your Community -->
+          <h3>Join Our Community</h3>
+          <p>At PranaPulse, we are proud to have created a supportive and welcoming community of individuals committed to personal growth, health, and mindfulness. Whether you are looking to start your yoga journey or deepen your practice, we invite you to join us.</p>
+      
+          <!-- Call to Action -->
+          <p><strong>Get Ready to begin your journey to a healthy life.</strong></p>
+        </div>
+      </section>
+      
+
+    <!-- Poses Section -->
+    <section id="yoga-poses" style="display: none;">
+        <h2>Yoga Poses</h2>
+        <div class="pose-cards">
+            <div class="card">
+                <h3>Beginner Yoga</h3>
+                <div class="nested-card">
+                    <h4>Mountain Pose</h4>
+                    <a href="mountain.html">Explore</a>
+                    <p>A grounding pose to start any practice, focusing on alignment and breathing.</p>
+                    <p>Tadasana activates almost every muscle in the body. The legs and even the arms are engaged to maintain balance and stability.</p>
+                </div>
+                <div class="nested-card">
+                    <h4>Downward Dog</h4>
+                    <a href="downwarddog.html">Explore</a>
+                    <p>A classic pose to stretch and strengthen the entire body.</p>
+                    <p>It's a pose that can release tension in the back, shoulders and even the arches of the feet.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <h3>Intermediate Yoga</h3>
+                <div class="nested-card">
+                    <h4>Warrior II</h4>
+                    <a href="warrior2.html">Explore</a>
+                    <p>A strengthening pose for legs and core, enhancing focus and stability.</p>
+                    <p> In addition to its physical benefits, Warrior II is often considered a "power pose" in yoga and focused gaze embody qualities of strength, confidence.</p>
+                </div>
+                <div class="nested-card">
+                    <h4>Tree Pose</h4>
+                    <a href="tree.html">Explore</a>
+                    <p>Balance and focus are key in this grounding pose.</p>
+                    <p>Its a perfect metaphor for feeling grounded while also aspiring toward higher goals.</p>
+                    </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Research Articles Section -->
+    <section id="research" style="display: none;">
+        <h2>Research Articles</h2>
+        <p>Explore research articles on the benefits and techniques of yoga for mind and body wellness.</p>
+        <div class="article-cards">
+            <div class="card">
+                <h3>Yoga and Mental Health</h3>
+                <p>An overview of recent studies linking yoga practices to mental health benefits.</p>
+                <p> Incorporate mindfulness and meditation into your yoga practice to calm your mind and reduce stress.</p>
+                    <p> Use yoga as a tool to better understand and accept your body and mind.</p>
+                    <p>Practice grounding poses that help balance emotions and promote stability.</p>
+                <a href="mental-health.html" target="_blank">Want to read..</a>
+
+            </div>
+            <div class="card">
+                <h3>Physical Benefits of Yoga</h3>
+                <p>Research articles discussing how yoga improves flexibility, strength, and overall fitness.</p>
+                <p>Focus on poses that build both strength and flexibility, such as Plank, Chaturanga, and Cobra Pose (Bhujangasana).
+                    <p>Incorporate heart-opening poses and inversions that promote better circulation.</p>
+                <a href="physical-benefits.html" target="_blank">Want to read..</a</div>
+        </div>
+    </section>
+</body>
+</html>
