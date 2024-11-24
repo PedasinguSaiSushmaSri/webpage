@@ -57,6 +57,7 @@ header nav ul li a:hover {
     position: relative;
     background-size: cover; /* Ensures background is resized properly */
     background-position: center; /* Centers the image */
+    height: 830px;
 }
 
 /* Other Sections */
@@ -71,20 +72,23 @@ section {
 
 #about-us {
     background-image: url('about.jpeg'); /* Example background */
-    background-size: cover; /* Ensure the background image covers the entire section */
-    background-position: center center; /* Center the background image */
+    background-size: cover;
+    background-position: center center;
+    height: 830px;
 }
 
 #yoga-poses {
     background-image: url('poses.jpeg'); /* Example background */
     background-size: cover;
     background-position: center center;
+    height: 830px;
 }
 
 #research {
     background-image: url('research.jpeg'); /* Example background */
     background-size: cover;
     background-position: center center;
+    height: 830px;
 }
 
 /* Hero Section Text Animation */
